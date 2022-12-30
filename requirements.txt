@@ -1,0 +1,11 @@
+pip install flask
+pip install Flask-Migrate
+pip install Flask-Bootstrap
+pip install Flask-SQLAlchemy
+pip install flask-wtf
+pip install PyMySQL
+
+#資料庫相關設定
+server.py 第13行改為
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://(你的帳號):(你的密碼)@localhost:3306/(你的資料庫名稱)"
+將p.sql匯入資料庫即可使用
